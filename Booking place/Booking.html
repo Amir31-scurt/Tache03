@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Booking a place</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+        <div class="img">
+            <img src="Low-Res.png">
+        </div>
+        <div class="data">
+        <form>
+            <div class="title">
+                <h2>Booking Place for your dinner!</h2>
+            </div>
+            <div class="remp">
+            <div class="inputbox">
+                <input type="text" id="name" required="required">
+                <span>Your name</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="tel" id="tel" required="required">
+                <span>Your phone Number</span>
+                <i></i>
+            </div>
+            <div class="time">
+                <label for="time"></label>
+                <select type="time">
+                    <option value="" disabled selected hidden>Time</option>
+                    <option value="p.evening">6:30 p.m.</option>
+                    <option value="evening">7:30 p.m.</option>
+                    <option value="af.evening">8:30 p.m.</option>
+                </select>
+            </div>
+            <div class="food">
+                <label for="food"></label>
+                <select type="food">
+                    <option value="" disabled selected hidden>Food</option>
+                    <option value="f1">Fried chicken</option>
+                    <option value="f2">Kebab</option>
+                    <option value="f3">Steak</option>
+                    <option value="f4">fish</option>
+                    <option value="f5">Tossed salad</option>
+                    <option value="f6">Pasta</option>
+                </select>
+            </div>
+        </div>
+        <p class="sel">Select your dinning space</p>
+            <div class="number">
+                <input type="radio" id="per-2" name="per" value="2" class="radio">
+                <label class="label perso-2" for="per-2"><p>2</p>
+                    <span class="tooltip">person</span>
+                </label>
+                <input type="radio" id="per-4" name="per" value="4" class="radio">
+                <label class="label perso-4" for="per-4"><p>4</p>
+                    <span class="tooltip">person</span>
+                </label>
+                <input type="radio" id="per-6" name="per" value="6" class="radio">
+                <label class="label perso-6" for="per-6"><p>6</p>
+                    <span class="tooltip">person</span>
+                </label>
+                <input type="radio" id="per-8" name="per" value="8" class="radio">
+                <label class="label perso-8" for="per-8"><p>8</p>
+                    <span class="tooltip">person</span>
+                </label>
+                <input type="radio" id="per-10" name="per" value="10" class="radio">
+                <label class="label perso-10" for="per-10"><p>10</p>
+                    <span class="tooltip">person</span>
+                </label>
+            </div>
+            <button type="submit" class="bookbtn">Book now</button>
+            <p>Verify your booking into your phone</p>
+        </form>
+        </div>
+        </section>
+    </body>

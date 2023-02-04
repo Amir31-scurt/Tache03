@@ -1,0 +1,336 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    padding: none;
+    margin: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+section .img{
+    position: relative;
+    width: 55%;
+    height: 100%;
+}
+section .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .data{
+    background-color: #2b1344;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+form h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+.remp{
+    margin-bottom: 30px;
+}
+.inputbox{
+    position: relative;
+    width: 100%;
+    left: 0;
+}
+.inputbox input{
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    padding-left: 0;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1em;
+    border-bottom: 2px solid white;
+}
+.inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 15px;
+    padding-left: 0;
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+}
+.inputbox input:focus ~ span, .inputbox input:valid~ span{
+    color: #c798f3;
+    transform: translateY(-2em);
+    font-size: 0.75em;
+}
+.inputbox input:focus{
+    border-bottom: 2px solid #c798f3;
+}
+.remp select{
+    width: 100%;
+    padding: 15px;
+    padding-left: 0;
+    margin: 2px;
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    border-bottom: 2px solid white;
+    color: white;
+}
+.remp select:focus{
+    color: #c798f3;
+}
+.sel{
+    margin-top: none;
+    color: white;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+p{
+    color: #c798f3;
+    font-size: 12px;
+}
+.radio{
+    display: none;   
+}
+.number label{
+    pointer-events: auto;
+    background-color: white;
+    color: #2b1344;
+    padding: 2px 17px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+    align-items: center;
+    display: inline-block;
+}
+.number .perso-10{
+    padding: 2px 11px;
+}
+.number p{
+    color: #2b1344;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+}
+.number .tooltip{
+    font-size: 0px;
+    opacity: 0;
+    pointer-events: none;
+}
+#per-2:checked ~ .perso-2,
+#per-4:checked ~ .perso-4,
+#per-6:checked ~ .perso-6,
+#per-8:checked ~ .perso-8,
+#per-10:checked ~ .perso-10
+{
+    background-color: #c798f3;
+    position: relative;
+    top: 11px;
+    left: 0px;
+    margin: none;
+    padding: none;
+}
+#per-2:checked ~ .perso-2 .tooltip,
+#per-4:checked ~ .perso-4 .tooltip,
+#per-6:checked ~ .perso-6 .tooltip,
+#per-8:checked ~ .perso-8 .tooltip,
+#per-10:checked ~ .perso-10 .tooltip{
+    color: #2b1344;
+    border-radius: 25px;
+    font-weight: bold;
+    opacity: 1;
+    padding: 14px 0px;
+    pointer-events: auto;
+    font-size: 13px;
+    float: right;
+    position: relative;
+    right: 8px;
+}
+#per-2:checked ~ .perso-2 p,
+#per-4:checked ~ .perso-4 p,
+#per-6:checked ~ .perso-6 p,
+#per-8:checked ~ .perso-8 p{
+    float: left;
+    background-color: #2b1344;
+    color: white;
+    padding: 2px 7px;
+    border-radius: 25px;
+    position: relative;
+    top: 9px;
+    right: 10px;
+    margin-right: 10px;
+    
+}
+#per-10:checked ~ .perso-10 p{
+    float: left;
+    background-color: #2b1344;
+    color: white;
+    padding: 4px 4px;
+    border-radius: 25px;
+    position: relative;
+    top: 7px;
+    right: 7px;
+    margin-right: 10px;
+}
+button{
+    display: block;
+    margin: 40px 0px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 13px 25px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #c798f3;
+    border: none;
+    color: white;
+}
+@media only screen and (max-width: 1080px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;   
+    }
+    form{
+        padding: 70px;
+    }
+    section .img{
+        display: none;
+    }
+    section .data{
+        background-color: #2b1344;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        padding-left: 30px;
+    }
+    .inputbox{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+    .inputbox input{
+        font-size: 2em;
+    }
+    .inputbox span{
+        font-size: 2em;
+    }
+    .inputbox input:focus ~ span, .inputbox input:valid~ span{
+        transform: translateY(-1em);
+        font-size: 1.5em;
+    }
+    .remp select{
+        width: 100%;
+        font-size: 2em;
+    }
+    form h2{
+        font-size: 4em;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .number{
+        margin-bottom: 50px;
+    }
+    .number label{
+        padding: 18px 28px;
+        font-size: 10px;
+        margin-bottom: 3px;
+        margin-right: 5px;
+        border-radius: 50%;
+    }
+    .number .perso-10{
+        padding: 18px 23px;
+        border-radius: 50%;
+    }
+    .number p{
+        color: #2b1344;
+        font-size: 3em;
+        padding: 1px 3px;
+        font-weight: bold;
+        position: relative;
+        top: 6px;
+    }
+    .number .perso-10 p{
+        padding: 1px 1px;
+    }
+    #per-2:checked ~ .perso-2,
+    #per-4:checked ~ .perso-4,
+    #per-6:checked ~ .perso-6,
+    #per-8:checked ~ .perso-8,
+    #per-10:checked ~ .perso-10{
+    top: 18px;
+    padding: 8px 20px;
+    border-radius: 65px;
+    }
+    #per-2:checked ~ .perso-2 .tooltip,
+    #per-4:checked ~ .perso-4 .tooltip,
+    #per-6:checked ~ .perso-6 .tooltip,
+    #per-8:checked ~ .perso-8 .tooltip,
+    #per-10:checked ~ .perso-10 .tooltip{
+        font-size: 2.8em;
+   }
+   #per-2:checked ~ .perso-2 p,
+   #per-4:checked ~ .perso-4 p,
+   #per-6:checked ~ .perso-6 p,
+   #per-8:checked ~ .perso-8 p{
+    padding: 2px 11px;
+    border-radius: 50%;
+    font-size: 3.5em;
+   }
+   #per-10:checked ~ .perso-10 p{
+    top: 7px;
+    right: 4px;
+    font-size: 3.2em;
+    padding: 4px 2px;
+    border-radius: 50%;
+   }
+   button{
+    display: block;
+    margin: 40px 0px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 2em;
+    background-color: #c798f3;
+    border: none;
+    color: white;
+    }
+    .sel{
+        margin-top: none;
+        color: white;
+        padding-bottom: 10px;
+        font-size: 1.5em;
+    }
+    p{
+        color: #c798f3;
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,166 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(hakaishin-Vegeta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: auto;
+}
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width: 70%;
+    align-items: center;
+    margin: auto;
+}
+p{
+    margin: 20px 10px 20px 50px;
+    padding-right: 60px ;
+    text-align: center;
+    color: blueviolet;
+    font-size: 2rem;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+}
+form img{
+    border: 7px solid white;
+    width: 25em;
+    order: 1;
+}
+div i{
+    opacity: 0.7;
+    position: fixed;
+    right: 19.5%;
+    padding-top: 20px;
+    width: 0%;
+    margin: auto;
+}
+input{
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 20px 10px;
+    width: 100%;
+    justify-content: center;
+    background-color: transparent;
+    font-weight: bold;
+}
+button{
+    margin-top: 4em;
+    margin-bottom: 2em;
+    padding: 15px 15px;
+    width: 40%;
+    background-color: rgb(73, 73, 73);
+    color: white;
+    border: 0.5px solid black;
+    
+}
+div{
+    order: 2;
+    text-align: center;
+    margin: auto;
+    align-content: center;
+    margin-right: 30px;
+}
+label{
+    font-size: .85rem;
+    margin-bottom: 10px;
+}
+select{
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 20px 5px;
+    width: 105%;
+    justify-content: center;
+    background-color: transparent;
+    font-weight: bold;
+    opacity: 0.7;
+}
+.prenom-nom{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    padding-left: 0em;
+}
+.prenom{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+input:hover{
+    border-color: blueviolet;
+}
+input:focus{
+    outline: none;
+    border-bottom: 2px solid blueviolet;
+    background-color: rgba(255, 69, 240, 0.2)
+}
+select:focus{
+    outline: none;
+    border-bottom: 2px solid blueviolet;
+    background-color: rgba(255, 69, 240, 0.2)
+}
+@media only screen and (max-width: 1080px){
+    form{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+        text-align: center;
+    }
+    form img{
+        width: 90%;
+    }
+    p{
+        font-size: 1.5em;
+        margin: 20px 10px 20px 50px;
+        padding-right: 50px;
+        text-align: center;
+    }
+    div{
+        text-align: center;
+        margin: auto;
+        align-content: center;
+        margin-right: 30px;
+        width: 100%;
+    }
+    div i{
+        opacity: 0.7;
+        position: relative;
+        left: 70%;
+        padding-top: 20px;
+        width: 0%;
+        margin: auto;
+    }
+    .prenom-nom{
+        flex-direction: column;
+        gap: 0;
+        padding: auto;
+        width: 100%;
+        margin: auto;
+        align-content: center;
+    }
+    input{
+        flex-direction: column;
+        gap: 1;
+        width: 70%;
+        font-weight: bold;
+        margin: auto;
+        padding: auto;
+        align-content: space-between;
+        justify-content: center;
+    }
+    select{
+        align-content: center;
+        width: 75%;
+        font-weight: bold;
+    }
+    .gender{
+        width: 100%;
+    }
+    
+}
+
+
+

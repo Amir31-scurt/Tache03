@@ -1,0 +1,224 @@
+body{
+    background-image: linear-gradient(to right,#2C3639, #A27B5C);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: #2C3639;
+    width: 46em;
+    height: 34.32em;
+    margin: auto;
+    margin-top: 50px;
+    color: white;
+    justify-content: center;
+}
+div p{
+    margin: 30px;
+    padding: 0px 70px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 23px;
+    color: #A27B5C;
+    font-weight: bold;
+}
+textarea{
+    height: 70px;
+    justify-content: baseline;
+    margin-top: 5px;
+    resize: none;
+    border: none;
+    border-bottom: 1.5px solid white;
+    background-color: transparent;
+    width: 55%;
+    padding: 5px;
+}
+.people{
+    margin-bottom: 7px;
+    font-size: 15px;
+}
+
+td{
+    padding: 10px 15px;
+    padding-left: 28px;
+    font-size: 15px;
+}
+form div{
+    order: 1;
+    width: 100%;
+    padding: auto;
+    margin-bottom: 0.32em;
+    border: none;
+}
+form img{
+    order: 2;
+    width: 23em;
+    padding: auto;
+}
+.text-over{
+    position: relative;
+    top: -7em;
+    background-color: rgba(162, 123, 92, 0.7);
+    height: 6.55em;
+}
+.text-over p{
+    font-size: 12px;
+    text-align: center;
+    padding-top: 2.5em;
+    margin: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: -8.45em;
+    color: white;
+    font-weight: lighter;
+}
+label{
+    padding: 10px;
+    margin: 20px;
+}
+input{
+    margin: 5px;
+    border: none;
+    border-bottom: 1.5px solid white;
+    background-color: transparent;
+    width: 55%;
+    padding: 5px;
+}
+select{
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    color: white;
+}
+option{
+    background-color: #A27B5C;
+    
+}
+.input-label{
+    display: flex;
+    flex-direction: column;
+}
+.input-label label{
+    order: 1;
+    margin: auto;
+    margin-left: 20px;
+    float: left;
+    font-size: 15px;
+}
+.input-label input, textarea{
+    order: 2;
+    float: right;
+    margin-right: 48px;
+    color: white;
+    font-size: 15px;
+}
+.cta{
+    background: linear-gradient(#A27B5C, #2C3639);
+    padding: 15px;
+    margin: 20px;
+    margin-left: 2.4em;
+    border: none;
+    color: white;
+}
+input:focus, textarea:focus{
+    outline: none;
+    border-bottom: 1.5px solid #f8b47c;
+}
+select:focus{
+    outline: none;
+    color: #803a02;
+}
+@media only screen and (max-width: 1080px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        background-color: #2C3639;
+        width: 80%;
+        height: 100%;
+        margin: none;
+        margin-top: 40px;
+        color: white;
+        justify-content: center;
+    }
+    form div{
+        padding-top: 1.1em;
+        width: 100%;
+        padding: auto;
+        border: none;
+    }
+    form img{
+        order: 2;
+        width: 90%;
+        padding: auto;
+        display: none;
+    }
+    div p{
+        margin: 0px;
+        padding: 30px;
+        padding-top: 0px;
+        text-align: center;
+        font-size: 20px;
+    }
+    td{
+        padding: 10px 26px;
+        font-size: 13px;
+    }
+    .people{
+        margin-bottom: 1px;
+        font-size: 13px;
+    }
+    select{
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+    option{
+        background-color: #A27B5C;
+    }
+    .input-label{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    .input-label label{
+        order: 1;
+        margin: none;
+        margin-left: 20px;
+        font-size: 13px;
+    }
+    .input-label input, textarea{
+        order: 2;
+        margin-right: 5px;
+        color: white;
+        font-size: 13px;
+        border: none;
+        border-bottom: 1.5px solid white;
+        background-color: transparent;
+        width: 60%;
+        position: relative;
+        left: -2em;
+    }
+    .text-over{
+        position: relative;
+        top: .6em;
+    }
+    .text-over p{
+        padding-top: 2em;
+    }
+    .cta{
+        background: linear-gradient(#A27B5C, #2C3639);
+        padding: 15px;
+        margin: 10px;
+        margin-left: 2.4em;
+        border: none;
+        color: white;
+    }
+    input:focus, textarea:focus{
+        outline: none;
+        border-bottom: 1.5px solid #f8b47c;
+    }
+    select:focus{
+        outline: none;
+        color: #803a02;
+    }
+}
